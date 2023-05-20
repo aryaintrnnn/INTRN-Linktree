@@ -1,0 +1,18 @@
+---
+import "@styles/Link.css"
+const { linkTitle, linkDescription, linkUrl } = Astro.props
+---
+
+<div class='container-link'>
+  <div
+    class='link'
+  >
+    <a href={linkUrl}
+      ><button class="link-button"
+        ><span class='link-text'>{linkTitle}{" "}</span>{
+          linkDescription
+        }</button
+      >
+    </a>
+  </div>
+</div>
