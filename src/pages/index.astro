@@ -1,0 +1,51 @@
+---
+import MainLayout from "@layouts/MainLayout.astro"
+import Avatar from "@components/Avatar.astro"
+import FeaturedCardsLayout from "@layouts/FeaturedCardsLayout.astro"
+import FeaturedCard from "@components/FeaturedCard.astro"
+import LinksLayout from "@layouts/LinkLayout.astro"
+import Link from "@components/Link.astro"
+---
+
+<MainLayout title='INTRN LinkTree'>
+  <Avatar />
+  <FeaturedCardsLayout>
+    <FeaturedCard
+    featuredCardIcon='ph:instagram-logo-fill'
+    featuredCardTitle='Follow Me!'
+    featuredCardLink='https://www.instagram.com/aryaintrn_'
+    />
+    <FeaturedCard
+    featuredCardIcon='mdi:github'
+    featuredCardTitle='Follow Me!'
+    featuredCardLink='https://github.com/aryaintrnnn'
+    />
+  </FeaturedCardsLayout>
+  <LinksLayout>
+    <Link
+      linkTitle='💻 TikTok Script'
+      linkDescription=''
+      linkUrl='https://github.com/aryaintrnnn/tiktok-html-css'
+    />
+    <Link
+      linkTitle='📃 Portfolio'
+      linkDescription=''
+      linkUrl='https://www.stefanrows.com'
+    />
+    <Link
+      linkTitle='🎵 Spotify'
+      linkDescription='My Longlest Playlist'
+      linkUrl='https://open.spotify.com/playlist/0kPYFdkiq2n37nYUSpMVbo?si=16df822b28f04bec'
+    />
+    <Link
+      linkTitle='🎵 Spotify'
+      linkDescription='My F this S Playlist'
+      linkUrl='https://open.spotify.com/playlist/2ljwdhI47Q8eQCFQNhh0k9?si=b631add901e249d1'
+    />
+    <Link
+      linkTitle='🎵 Spotify'
+      linkDescription='Marveyla Divaria Drive//listen Playlist'
+      linkUrl='https://open.spotify.com/playlist/3VSElnTUfCp5J6NMeQpBEQ?si=c99a1c28f9df442c'
+    />
+  </LinksLayout>
+</MainLayout>
